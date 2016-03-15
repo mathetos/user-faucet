@@ -89,7 +89,9 @@ if ( ! empty( $user_query->results ) ) {
     ?>
 
     <tr>
-      <td><?php echo $firstname . '&nbsp;' . $lastname; ?></td>
+      <td><?php echo $firstname . '&nbsp;' . $lastname; ?><br />
+        <a href="<?php echo get_edit_user_link($info->ID); ?>">Edit this user</a>
+      </td>
       <td><?php echo $username; ?></td>
       <td><?php echo $email; ?></td>
       <td><?php echo ucwords($role[0]); ?></td>
